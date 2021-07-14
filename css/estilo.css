@@ -1,0 +1,309 @@
+.footer .footer__general {
+  background-color: #530a0a; }
+  .footer .footer__general .footer__items {
+    color: cadetblue; }
+
+.navegador .navegador__lista .navegador__items a {
+  text-decoration: none; }
+
+/* Agregue tres bloques mas del desafio uno de SASS*/
+.footerQuienes .footerQuienes__redes {
+  background-color: coral; }
+
+.quienesMain .quienesMain__sections {
+  background-color: #a03434;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.fondoGolem {
+  background-color: #acbb21; }
+  .fondoGolem .fondoGolem__nav .fondoGolem__lista {
+    background-color: teal; }
+    .fondoGolem .fondoGolem__nav .fondoGolem__lista .fondoGolem__enlaces {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+body {
+  background-color: rgba(213, 216, 15, 0.623);
+  font-family: 'Squada One', cursive;
+  font-size: x-large;
+  margin: 0%;
+  height: 2000px; }
+
+main {
+  text-align: center; }
+
+section {
+  background-color: chocolate; }
+
+form {
+  background-color: chocolate; }
+
+li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+header {
+  top: 0; }
+
+nav {
+  background-color: #dd5454;
+  top: 0;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+footer {
+  background-color: brown;
+  background-image: linear-gradient(#992e2e, #4b0404);
+  width: 100%; }
+
+footer .redesSociales {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*HOME  ----------------------------------------------------------------------*/
+#estructuraSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px;
+  align-items: center;
+  justify-content: center; }
+
+#musculacionCalistenia {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px; }
+
+/*extra small divice celulares*/
+@media only screen and (max-width: 600px) {
+  #estructuraInicio {
+    display: grid;
+    height: 2000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 10% 60% 15%;
+    grid-template-areas: "banner" "barra" "contenido" "footer"; }
+  #estructuraSection {
+    display: grid;
+    background-color: #d3052e;
+    height: 500px;
+    grid-template-columns: 100px;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    grid-area: publicidad; }
+  #musculacionCalistenia {
+    display: grid;
+    height: 700px;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-area: contenido; }
+  #barraMenu {
+    grid-area: barra; }
+  .bannerGolem {
+    grid-area: banner; }
+  header {
+    top: 0; }
+  nav {
+    background-color: #dd5454;
+    top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+  nav ul {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 40px 40px 40px 40px; }
+  footer {
+    background-color: brown;
+    background-image: linear-gradient(#992e2e, #4b0404);
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-area: footer; }
+  form {
+    background-color: chocolate; }
+  #estructuraBeneficios {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "beneficioUno" "beneficioDos"; }
+  #beneficioUno {
+    grid-area: beneficioUno; }
+  #beneficioDos {
+    grid-area: beneficioDos; }
+  #estructuraQsomos {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "hola" "terraza" "entrenamiento"; }
+  #hola {
+    grid-area: hola; }
+  #terraza {
+    grid-area: terraza; }
+  #entrenamiento {
+    grid-area: entrenamiento; }
+  #estructuraRutinas {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "sinM" "conM" "personalizadas"; }
+  #sinMateriales {
+    grid-area: sinM; }
+  #conMateriales {
+    grid-area: conM; }
+  #personalizadas {
+    grid-area: personalizadas; } }
+
+/*tablets*/
+@media only screen and (min-width: 600px) {
+  #estructuraSection {
+    display: grid;
+    background-color: #d3052e;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+    align-items: center;
+    justify-content: center; }
+  #musculacionCalistenia {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px; }
+  header {
+    position: sticky;
+    top: 0; }
+  nav {
+    background-color: #dd5454;
+    top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  footer {
+    background-color: brown;
+    height: 50px;
+    width: 100%; }
+  footer .redesSociales {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+  #estructuraRutinas {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "sinM" "conM" "personalizadas"; }
+  #sinMateriales {
+    grid-area: sinM; }
+  #conMateriales {
+    grid-area: conM; }
+  #personalizadas {
+    grid-area: personalizadas; }
+  #estructuraQsomos {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "hola" "terraza" "entrenamiento"; }
+  #hola {
+    grid-area: hola; }
+  #terraza {
+    grid-area: terraza; }
+  #entrenamiento {
+    grid-area: entrenamiento; }
+  #estructuraBeneficios {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "beneficioUno" "beneficioDos"; }
+  #beneficioUno {
+    grid-area: beneficioUno; }
+  #beneficioDos {
+    grid-area: beneficioDos; } }
+
+/*notebooks*/
+@media only screen and (min-width: 992px) {
+  #estructuraSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+    align-items: center;
+    justify-content: center; }
+  #musculacionCalistenia {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px; }
+  header {
+    position: sticky;
+    top: 0; }
+  nav {
+    background-color: #dd5454;
+    top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  footer {
+    background-color: brown;
+    height: 50px;
+    width: 100%; }
+  footer .redesSociales {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+  #estructuraRutinas {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "sinM" "conM" "personalizadas"; }
+  #sinMateriales {
+    grid-area: sinM; }
+  #conMateriales {
+    grid-area: conM; }
+  #personalizadas {
+    grid-area: personalizadas; }
+  #estructuraQsomos {
+    height: 500px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "hola" "terraza" "entrenamiento"; }
+  #hola {
+    grid-area: hola; }
+  #terraza {
+    grid-area: terraza; }
+  #entrenamiento {
+    grid-area: entrenamiento; }
+  #estructuraBeneficios {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "beneficioUno" "beneficioDos"; }
+  #beneficioUno {
+    grid-area: beneficioUno; }
+  #beneficioDos {
+    grid-area: beneficioDos; } }
