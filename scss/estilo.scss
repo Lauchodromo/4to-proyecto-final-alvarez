@@ -1,535 +1,581 @@
-.footer{
-
-    .footer__general{
-        background-color: rgb(83, 10, 10);
-
-        .footer__items{
-            color: cadetblue;
-        
-        }
-    }
-}
-
-.navegador{
-
-    .navegador__lista{
-
-        .navegador__items{
-
-            a{
-                text-decoration: none;
-            }
-            
-        }
-    }
-}
-
-/* Agregue tres bloques mas del desafio uno de SASS*/
-.footerQuienes{
-
-    .footerQuienes__redes{
-        background-color: coral;
-        
-    }
-}
-
-.quienesMain{
-
-    .quienesMain__sections{
-
-        background-color: rgb(160, 52, 52);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        
-    }
-}
-
-.fondoGolem{
-        background-color: rgb(172, 187, 33);
-    .fondoGolem__nav{
-        
-        .fondoGolem__lista{
-
-            background-color: teal;
-
-            .fondoGolem__enlaces{
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        }
-    }
-}
-
+* {
+    margin: 0;
+    padding: 0; }
   
-
-
-body{
-    background-color: rgba(213, 216, 15, 0.623);
-    font-family: 'Squada One', cursive;
-    font-size: x-large;
-    margin: 0%;
-    height: 2000px;
-}
-
-main{
-    text-align: center;
-}
-
-section{
-
-    background-color: chocolate;
-}
-
-form{
-
-    background-color: chocolate;
-}
-
-li{
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-
-}
-
-header{
-    top: 0;
-}
-
-nav{
-    background-color: rgb(221, 84, 84);
-    top: 0;
-    padding-top: 2px;
-    padding-bottom: 2px; 
+  body {
+    font-family: 'Montserrat', sans-serif;
+    }
+  
+  main {
+    text-align: center; 
+  }
+  
+  /*INICIO-------------------------------------------------*/
+    header {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      padding: 3% 0;
+    }
     
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;    
-}
-
-footer{
-    background-color: brown;
-    background-image: linear-gradient(rgb(153, 46, 46), rgb(75, 4, 4));
+    .bannerGolem {
+      max-width: 300px;
+      margin: 0 auto;
+    }
     
-    width: 100%;
+    nav{
+      background-color: black;
+      position: sticky;
+      top: 0;
+    }
     
-}
-
-footer .redesSociales{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-*{
-    margin:0;
-    padding:0;
-}
-
-/*HOME  ----------------------------------------------------------------------*/
-
-#estructuraSection{
-
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px;
-    align-items: center;
-    justify-content: center;
-}
-
-#musculacionCalistenia{
-
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 3%;
+      margin-bottom: 0;
+      list-style: none; 
+    }
+    
+    nav ul a {
+      font-size: 18px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+    } 
+    
+    nav ul a:hover {
+      color: #ffcf60;
+    }
+    
+    a.activo {
+      color: #ffcf60;
+      font-weight: 800;
+    }
+    
+    #estructuraSection {
+      background-color: #ffcf60;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    
+    #estructuraSection .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #estructuraSection a {
+      font-size: 30px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1;
+    }
+    
+    #estructuraSection a:hover {
+      font-weight: 300;
+    }
+    
+    #estructuraSection img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    #musculacionCalistenia {
+      background-color: black;
+      color: white; 
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    
+    #musculacionCalistenia .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    
+    #musculacionCalistenia h2 {
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 5px;
+      margin-bottom: 3%;
+    }
+    
+    #musculacionCalistenia img {
+      margin: 0 auto;
+      max-width: 95%;
+    }
+    
+    #musculacionCalistenia p {
+      margin-top:3%;
+      text-transform:uppercase;
+      line-height:1;
+    }
+    
+    #whatsApp{
+      background-color: white;
+      color:black;
+      padding: 3%;
+      text-align: center;
+    }
+    
+    #whatsApp h1{
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    
+    #whatsApp h3{
+      font-weight: 500;
+      font-weight: 25px;
+      text-transform: uppercase;
+    }
+    
+    #whatsApp p {
+      margin-top: 20px;
+    }
+    
+    #whatsApp a{
+      background-color: #f1cd68;
+      padding: 5px 15px;
+      color:black;
+      font-size: 18px;
+      border-radius: 20px;
+      border: 1px solid #f1cd68;
+      text-decoration: none;
+    }
+    
+    #whatsApp a:hover{
+      background-color: black;
+      color:#f1cd68;
+      border: 1px solid black;
+    }
+    
+    footer {
+      background-color: black;
+      color: white;
+      padding-top: 20px;
+    }
+    
+    footer .redesSociales {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    
+    footer .redesSociales a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    footer .redesSociales a:hover {
+      color: #ffcf60;
+    }
+   
+  /*BENEFICIOS-------------------------------------------------*/
+  
+  #estructuraBeneficios {
+    background-color: #ffcf60;
+  }
+  
+  #estructuraBeneficios h1 {
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align:center;
+    padding-bottom: 3%;
+  }
+  
+  .generales {
     display: grid;
-    height: 300px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px;
-    
-}
-
-
-/*extra small divice celulares*/
-@media only screen and (max-width: 600px){
-
-    #estructuraInicio{
-
-        display: grid;
-        height: 2000px;
-        grid-template-columns: 100%;
-        grid-template-rows: 15% 10% 60% 15%;
-        grid-template-areas:    "banner"
-                                "barra"
-                                "contenido"
-                                "footer";
-    }                        
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    color: white;
+    align-content: space-around;
+    padding: 3% 3%;
+  }
   
-    
-    
-    #estructuraSection{
-
-        display:grid;
-        background-color: rgb(211, 5, 46);
-        height: 500px;
-        grid-template-columns: 100px;
-        grid-template-rows: 50% 50%;
-        align-items: center;
-        justify-content: center;
-        row-gap: 50px;
-        grid-area: publicidad;
+  .generales p {
+    margin-top:3%;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  
+  .generales p:hover {
+    color: #ffcf60;
+  }
+  
+  .covid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    color: white;
+    align-content: space-around;
+    padding: 3% 3%;
+  }
+  
+  .covid p {
+    margin-top:3%;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  
+  .covid p:hover {
+    color: #ffcf60;
+  }
+  
+  .covid div, .generales div {
+    background-color: black;
+    padding-top: 3%;
+  }
+  
+  .imagenBeneficio {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  
+  /*QuienesSomos-------------------------------------------------*/
+  
+  #hola { 
+    background-color: #ffcf60;
+    color: black;
+  }
+  
+  #hola .container {  
+    display: grid;
+    grid-template-areas: "hola1 hola2";
+    padding: 3%;
+  }
+  
+  #hola .classHola {
+    grid-area: hola1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #hola .descripcion {
+    grid-area: hola2;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #terraza {
+    background-color: black;
+    color: #ffcf60;
+  }
+  
+  #terraza .container {
+    display: grid;
+    grid-template-areas: "terraza1 terraza2";
+    padding: 3%;
+  }
+  
+  #terraza .miTerraza {
+    grid-area: terraza1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #terraza .lugar {
+    grid-area: terraza2;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #quePodemos {
+    background-color: white;
+    color: black;
+  }
+  
+  #quePodemos .container {
+    display: grid;
+    grid-template-areas: "podemos1 podemos2";
+    padding: 3%;
+  }
+  
+  #quePodemos .posibilidades {
+    grid-area: podemos1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #quePodemos .descripcion2 {
+    grid-area: podemos2;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #quePodemos p{
+    max-width: 600px;
+  }
+  
+  .tamanoImagen {
+  width: 80%;
+  }
+  
+  /*RutinasOnline-------------------------------------------------*/
+  
+  #sinMateriales {
+    background-color: #ffcf60;
+    color: black;
+    padding: 8%;
+  }
+  
+  .rutinas {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  #conMateriales {
+    background-color: black;
+    color: white;
+    padding: 8%;
+  }
+  
+  #personalizadas {
+    background-color: white;
+    color: black;
+    padding: 8%;
+  }
+  
+  .boton1 a {
+    background-color: black;
+    padding: 5px 15px;
+    color:white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid #f1cd68;
+    text-decoration: none;
+  }
+  
+  .boton2 a {
+    background-color:white;
+    padding: 5px 15px;
+    color:black;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid #f1cd68;
+    text-decoration: none;
+  }
+  
+  .boton3 a {
+    background-color:#ffcf60;
+    padding: 5px 15px;
+    color:black;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid #f1cd68;
+    text-decoration: none;
+    margin-top: 8 0px;
+  }
+  
+  /*CONTACTO-------------------------------------------------*/
+  
+  form {
+    text-align: left;
+    margin: 3%;
+  }
+  
+  .form-group {
+    margin-top: 15px;
+  }
+  
+  form button{
+    background-color:#ffcf60!important;
+    color: black!important;
+  }
+  
+  #contacto {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  /*tablets------------------------------------------------*/
+  @media only screen and (max-width: 900px) and (min-width: 601px){
+  
+    nav{
+      position: inherit;
     }
     
-    #musculacionCalistenia{
+    nav ul {
+      display: block;
+      padding-left: 0;
+    }
+  
+    nav ul li {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top: 1px solid white;
+      text-align: center;
+    }
+  
+    footer {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+    footer .redesSociales {
+      margin: 10px;
+      display: inherit;
+      font-size: 12px;
+    }
     
-        display: grid;
-        height: 700px;
-        grid-template-columns: auto;
-        grid-template-rows: 50% 50%;
-        grid-area: contenido;
-       
-       
+    footer .redesSociales p {
+      margin-bottom: 10px;
+      text-align: center;
+      border-bottom: 1px solid white;
     }
-
-    #barraMenu{
-        grid-area: barra;
-    }
-
-    .bannerGolem{
-        grid-area: banner;
-    }
-
-    header{
-        top: 0;
+  }
+  
+  
+  
+  /*extra small divice celulares--------------------------------*/
+  @media only screen and (max-width: 600px) {
+    
+    /*inicio----------------------------------------------------*/
+    .bannerGolem {
+      max-width: 200px;
     }
     
     nav{
-        background-color: rgb(221, 84, 84);
-        top: 0;
-        padding-top: 2px;
-        padding-bottom: 2px;
-         
-
+      position: inherit;
     }
     
-    nav ul{
-        
-        display: grid;  
-        grid-template-columns: 100%;
-        grid-template-rows: 40px 40px 40px 40px 40px;
-          
+    nav ul {
+      display: block;
+      padding-left: 0;
     }
-
-    footer{
-        background-color: brown;
-        background-image: linear-gradient(rgb(153, 46, 46), rgb(75, 4, 4));
-        height: 100px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-area: footer;
-     }
-
-     form{
-
-        background-color: chocolate;
-        
-    }  
-    
-    #estructuraBeneficios{
-        height: 500px;
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:    "beneficioUno"
-                                "beneficioDos";
-        
-    }
-
-      #beneficioUno{
-          grid-area: beneficioUno;
-      }
-
-      #beneficioDos{
-          grid-area: beneficioDos;
-      }
-
-      #estructuraQsomos{
-          height: 500px;
-          background-color: chocolate;
-          display: grid;
-          grid-template-rows: 33% 33% 33%;
-          grid-template-areas: "hola"
-                                "terraza"
-                                "entrenamiento";
-      }
-
-      #hola{
-          grid-area: hola;
-      }
-
-      #terraza{
-          grid-area: terraza;
-      }
-
-      #entrenamiento{
-          grid-area: entrenamiento;
-      }
-
-      #estructuraRutinas{
-          height: 500px;
-          background-color: chocolate;
-          display: grid;
-          grid-template-rows: 33% 33% 33%;
-          grid-template-areas: "sinM"
-                                "conM"
-                                "personalizadas";
-      }
-
-      #sinMateriales{
-          grid-area: sinM;
-      }
-
-      #conMateriales{
-          grid-area: conM;
-      }
-
-      #personalizadas{
-          grid-area: personalizadas;
-      }
-
-      
-}
-
-/*tablets*/
-@media only screen and (min-width: 600px){
-
-    #estructuraSection{
-
-        display:grid;
-        background-color:rgb(211, 5, 46);
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100px;
-        align-items: center;
-        justify-content: center;
+  
+    nav ul li {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top: 1px solid white;
+      text-align: center;
     }
     
-    #musculacionCalistenia{
-    
-        display: grid;
-        height: 300px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100px;
-        
-    }
-
-    header{
-        position: sticky;
-        top: 0;
+    #estructuraSection .container { 
+      grid-template-columns: 100%;
     }
     
-    nav{
-        background-color: rgb(221, 84, 84);
-        top: 0;
-        padding-top: 2px;
-        padding-bottom: 2px; 
+    #estructuraSection a {
+      font-size: 20px;
     }
     
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;    
+    #musculacionCalistenia {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    #musculacionCalistenia .container {
+      grid-template-columns: 100%;
     }
     
-    footer{
-        background-color: brown;
-        height: 50px;
-        width: 100%;
+    #whatsApp h1{
+      font-size: 30px;
     }
     
-    footer .redesSociales{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #estructuraRutinas{
-        height: 500px;
-        background-color: chocolate;
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-areas: "sinM"
-                              "conM"
-                              "personalizadas";
-    }
-
-    #sinMateriales{
-        grid-area: sinM;
-    }
-
-    #conMateriales{
-        grid-area: conM;
-    }
-
-    #personalizadas{
-        grid-area: personalizadas;
-    }
-
-    #estructuraQsomos{
-        height: 500px;
-        background-color: chocolate;
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-areas: "hola"
-                              "terraza"
-                              "entrenamiento";
-    }
-
-    #hola{
-        grid-area: hola;
-    }
-
-    #terraza{
-        grid-area: terraza;
-    }
-
-    #entrenamiento{
-        grid-area: entrenamiento;
-    }
-
-    #estructuraBeneficios{
-        height: 500px;
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:    "beneficioUno"
-                                "beneficioDos";
-        
-    }
-
-      #beneficioUno{
-          grid-area: beneficioUno;
-      }
-
-      #beneficioDos{
-          grid-area: beneficioDos;
-      }
-
-}
-
-
-/*notebooks*/
-@media only screen and (min-width: 992px){
-
-    #estructuraSection{
-
-        display:grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100px;
-        align-items: center;
-        justify-content: center;
+    #whatsApp h3{
+      font-weight: 18px;
     }
     
-    #musculacionCalistenia{
-    
-        display: grid;
-        height: 300px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100px;
-        
-    }
-
-    header{
-        position: sticky;
-        top: 0;
+    #whatsApp p {
+      margin-top: 20px;
     }
     
-    nav{
-        background-color: rgb(221, 84, 84);
-        top: 0;
-        padding-top: 2px;
-        padding-bottom: 2px; 
+    #whatsApp a{
+      font-size: 16px;
     }
     
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;    
+    footer {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+    footer .redesSociales {
+      margin: 10px;
+      display: inherit;
+      font-size: 10px;
     }
     
-    footer{
-        background-color: brown;
-        height: 50px;
-        width: 100%;
+    footer .redesSociales p {
+      margin-bottom: 10px;
+      text-align: center;
+      border-bottom: 1px solid white;
+    }
+  
+    /*Beneficios-------------------------------------------------*/
+    .generales {
+      grid-template-columns: 100%;
     }
     
-    footer .redesSociales{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
+    .generales div {
+      margin-top: 15px;
     }
-
-    #estructuraRutinas{
-        height: 500px;
-        background-color: chocolate;
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-areas: "sinM"
-                              "conM"
-                              "personalizadas";
+    
+    .covid {
+      grid-template-columns: 100%;
     }
-
-    #sinMateriales{
-        grid-area: sinM;
+    
+    .covid div {
+      margin-top: 15px;
     }
-
-    #conMateriales{
-        grid-area: conM;
+    
+    /*quienesSomos-------------------------------------------------*/
+  
+    #hola .container {  
+      grid-template-areas:  "hola1" 
+                            "hola2" ; 
     }
-
-    #personalizadas{
-        grid-area: personalizadas;
+    
+    #hola .descripcion {
+      margin-top: 3%;
     }
-
-    #estructuraQsomos{
-        height: 500px;
-        background-color: chocolate;
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-areas: "hola"
-                              "terraza"
-                              "entrenamiento";
+    
+    #terraza .container {
+      grid-template-areas: "terraza1" 
+                           "terraza2";
     }
-
-    #hola{
-        grid-area: hola;
+    
+    #terraza .lugar {
+      margin-top: 3%;
     }
-
-    #terraza{
-        grid-area: terraza;
+    
+    #quePodemos .container {
+      grid-template-areas: "podemos1" 
+                           "podemos2";
     }
-
-    #entrenamiento{
-        grid-area: entrenamiento;
+    
+    #quePodemos .descripcion2 {
+      margin-top: 3%;
     }
-
-    #estructuraBeneficios{
-        height: 500px;
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:    "beneficioUno"
-                                "beneficioDos";
-        
+    
+    .tamanoImagen {
+    width: 60%;
     }
+  
+  /*rutinas-------------------------------------------------*/
+  
+  .rutinas {
+    font-size: 20px;
+  }
+  
+  /*contacto-------------------------------------------------*/
+  
+  }
+  
+  
 
-      #beneficioUno{
-          grid-area: beneficioUno;
-      }
 
-      #beneficioDos{
-          grid-area: beneficioDos;
-      }
-}
